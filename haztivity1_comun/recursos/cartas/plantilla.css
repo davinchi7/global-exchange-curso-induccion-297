@@ -1,0 +1,114 @@
+
+#fichas {
+    position: absolute;
+}
+
+.fichaPeque {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #000;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 0px 5px #000;
+    width: 100px;
+    height: 150px;
+    float: left;
+    list-style: none;
+    overflow: hidden;
+    padding: 10px;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+}
+
+.cerrar {
+ 
+    width: 23px;
+    height: 20px;
+    color: #808080;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 3px;
+    display: none;
+    opacity: 0.7;
+    top: 5px;
+    right: 5px;
+    margin-bottom: 5px;
+    z-index: 10;
+}
+
+    .glyphicon-remove-circle :hover {
+        cursor: pointer;
+        color: #fff !important;
+    }
+
+#fichas li:hover {
+     
+}
+
+ 
+
+.fichaGrande {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fe7822;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 0px 5px #fe7822;
+    width: 400px;
+    min-height: 200px;
+    float: left;
+    list-style: none;
+    padding: 40px 20px 20px 20px !important;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.fichaTransicion {
+    position: absolute;
+    z-index: 1;
+    color: #000;
+}
+
+.fichaActual {
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 0px 0px 5px #b0d200;
+    background-color: #b0d200;
+    color: #fff !important;
+    opacity: 0.95;
+   font-size: 16px !important;
+}
+
+.fichaVista {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 0px 5px #ccc;
+    width: 100px;
+    height: 150px;
+    float: left;
+    list-style: none;
+    overflow: hidden;
+    padding: 10px;
+    color: #ccc!important;
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+}
+
+    .fichaVista:hover {
+
+    }
+
+.textoInterior {
+    overflow: auto !important;
+    overflow-x: hidden !important;
+    height: 200px;
+}

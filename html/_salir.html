@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Grupo FINSI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="haztivity1">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <script src="../haztivity1_comun/lib/jquery.min.js"></script>
+</head>
+
+<body style="margin-left: 0px; margin-top: 0px; font-size: 24px; font-family: 'Courier New', Courier, monospace;">
+    <center>
+        <div id="mensajeSalida" style="text-align: center;  padding-top: 100px;">
+            <p>Has salido del curso. </p>
+            <p>Puedes continuar en otro momento. </p>
+            <p>Muchas gracias.</p>
+            <p>&nbsp;</p>
+        </div>
+    </center>
+    <script>
+        $(function() {
+            idioma = window.location.toString().split('=')[1];
+            document.getElementById("mensajeSalida").innerHTML = getEtiqueta("mensajeSalida", idioma);
+        });
+
+
+        function getEtiqueta(etiqueta, idioma) {
+            var texto = "";
+            $.ajax({
+                url: '../xml/config.xml',
+                type: 'get',
+                dataType: 'xml',
+                async: false,
+                success: function(xml) {
+                    $(xml).find('texto[id="' + etiqueta + '"]').each(function() {
+                        texto = $(this).find(idioma).text();
+                    })
+                }
+            });
+            return texto;
+        }
+    </script>
+</body>
+
+</html>

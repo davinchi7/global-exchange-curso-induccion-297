@@ -1,0 +1,122 @@
+#actividad {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    font-size: 14px;
+
+}
+
+    #actividad #items-left {
+        text-align: center;
+        color: #333333;
+        margin-bottom: 14px;
+    }
+
+    #actividad table {
+        float: left;
+        border: 1px solid #222222;
+    }
+
+        #actividad table td {
+            padding: 5px;
+            text-align: center;
+        }
+
+            #actividad table td:hover {
+                cursor: pointer;
+                background-color: #4d4dff;
+            }
+
+            #actividad table td.marcada {
+                background-color: #0000ff;
+            }
+
+    #actividad ul#lista-palabras {
+        min-height: 240px;
+        min-width: 150px;
+        padding: 4px;
+        margin-left: 30px;
+        float: left;
+        font-size: 12px;
+    }
+
+        #actividad ul#lista-palabras li {
+            border: 1px solid #222;
+            padding:5px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            border: 1px solid #D1D1D1;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            list-style: none;
+        }
+
+            #actividad ul#lista-palabras li:hover {
+                border: 1px solid;
+                cursor: pointer;
+            }
+    /* Colores monocromAticos */
+    #actividad .palabra-1 {
+        background-color: #8DD3C7;
+    }
+
+    #actividad .palabra-2 {
+        background-color: #FFFF34;
+    }
+
+    #actividad .palabra-3 {
+        background-color: #BEBADA;
+    }
+
+    #actividad .palabra-4 {
+        background-color: #FB8072;
+    }
+
+    #actividad .palabra-5 {
+        background-color: #80B1D3;
+    }
+
+    #actividad .palabra-6 {
+        background-color: #FDB462;
+    }
+
+    #actividad .palabra-7 {
+        background-color: #B3DE69;
+    }
+
+    #actividad .palabra-8 {
+        background-color: #FCCDE5;
+    }
+
+    #actividad .palabra-9 {
+        background-color: #D9D9D9;
+    }
+
+    #actividad .palabra-10 {
+        background-color: #BC80BD;
+    }
+
+    #actividad .palabra-11 {
+        background-color: #CCEBC5;
+    }
+
+    #actividad .palabra-12 {
+        background-color: #FFED6F;
+    }
+
+    #actividad .letra-color-def {
+        background-color: #756BB1;
+    }
+
+.correcta {
+ 
+    background: url(../../../img/ok.png) 128px 2px no-repeat !important;
+}
+
+.incorrecta {
+ 
+    background: url(../../../img/ko.png) 123px 5px no-repeat !important;
+}

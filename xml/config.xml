@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textos>
+  <texto id="tituloCurso">
+    <es><![CDATA[<div style="font-size:20px;"></div>]]></es>
+  </texto>
+
+  <texto id="ttAvance">
+    <es><![CDATA[Muestra el avance del curo en porcentaje]]></es>
+    <ca><![CDATA[Percentatge d'avanç del curs]]></ca>
+  </texto>
+
+  <texto id="avance">
+    <es><![CDATA[Avance:]]></es>
+    <ca><![CDATA[Avanç:]]></ca>
+  </texto>
+  
+  <texto id="ttNumPantallas">
+    <es><![CDATA[Muestra el número de pantallas del epígrafe actual]]></es>
+    <ca><![CDATA[Mostra el nombre de pantalles de l'epígraf actual]]></ca>
+  </texto>  
+  
+  <texto id="ttVerIndice">
+    <es><![CDATA[Ver índice]]></es>
+    <ca><![CDATA[Veure índex]]></ca>
+  </texto>
+
+  <texto id="ttSilenciarSonido">
+    <es><![CDATA[Silenciar Audio]]></es>
+    <ca><![CDATA[Silenciar àudio]]></ca>
+  </texto>
+  
+  <texto id="ttSalirCurso">
+    <es><![CDATA[Salir del curso]]></es>
+    <ca><![CDATA[Sortir del curs]]></ca>
+  </texto> 
+  
+  <texto id="ttRecargar">
+    <es><![CDATA[Volver a cargar la página actual]]></es>
+    <ca><![CDATA[Torna a carregar la pàgina actual]]></ca>
+  </texto>    
+  
+  <texto id="ttRetroceder">
+    <es><![CDATA[Retroceder a la página anterior]]></es>
+    <ca><![CDATA[Retrocedir a la pàgina anterior]]></ca>
+  </texto>
+  
+  <texto id="ttAvanzar">
+    <es><![CDATA[Avanzar a la página siguiente]]></es>
+    <ca><![CDATA[Avançar a la pàgina següent]]></ca>
+  </texto>
+  
+  <texto id="clikSalir">
+    <es><![CDATA[Haga click en Salir]]></es>
+    <ca><![CDATA[Feu clic a Sortir]]></ca>
+  </texto>
+
+  <texto id="mensajeSalida">
+    <es>
+      <![CDATA[<p>Has salido del curso.</p><p>Puedes continuar en otro  momento.</p><p>Muchas gracias.</p>]]></es>
+    <ca>
+      <![CDATA[<p>Heu sortit del curs.</p><p>Pots continuar en un altre moment.</p><p>Moltes gràcies.</p>]]></ca>
+  </texto>
+  
+	<texto id="cargando">
+		<es>
+		  <![CDATA[Cargando datos...]]></es>
+		<ca>
+		  <![CDATA[Carregant dades...]]></ca>
+	</texto>
+</textos>

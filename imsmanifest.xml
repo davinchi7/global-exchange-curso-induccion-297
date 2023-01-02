@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.0.2 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-6D2311A4-3EF7-766F-F193-F22F2E123A10" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG-9F607B73-DED1-B5B1-B19D-DB91A400D732">
+    <organization identifier="ORG-9F607B73-DED1-B5B1-B19D-DB91A400D732" structure="hierarchical">
+      <title>Gestión del tiempo</title>
+
+      <item identifier="ITEM_1334" identifierref="MANIFEST_635693909825645000_RESOURCE1334" isvisible="true" parameters="">
+        <title>Gestión del tiempo</title>
+        <adlcp:masteryscore>50</adlcp:masteryscore>
+      </item>
+
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="MANIFEST_635693909825645000_RESOURCE1334" type="webcontent" href="sco1334/_index.html" adlcp:scormtype="sco" />
+  </resources>
+</manifest>

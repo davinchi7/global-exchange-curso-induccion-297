@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Trabajo en Equipo</title>
+	<link href="css/contenidos.css" rel="stylesheet" type="text/css">
+	<meta name="robots" content="noindex">
+	<style>
+		html {
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		body {
+			background-image: url(img/fondoApp.png);
+		}
+
+		.caja {
+			float: left;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			border: 1px solid #ccc;
+			padding-top: 20px;
+			margin: 10px;
+			background-color: #f4f4f4;
+		}
+
+		.caja:hover {
+			cursor: pointer;
+			background-color: #000;
+			color: #F90;
+		}
+
+		.inactivo {
+			cursor: not-allowed !important;
+			background-color: #f4f4f4 !important;
+			color: #000 !important;
+		}
+	</style>
+</head>
+
+
+
+
+
+<body class="contenidoCompleto">
+	<div style="margin:0px auto; width:800px;">
+		<H3 style="text-align:center;">Competencia: Trabajo en Equipo</H3>
+
+		<fieldset style="margin:20px; padding:40px; background-color:#FFF;">
+			<legend>Primer Incidente crítico</legend>
+			<div class="caja" onClick="lanzaSco(1121)">El reto<br>Impacto 1</div>
+			<div style="clear:both;"></div>
+		</fieldset>
+
+	</div>
+	<script type="text/javascript">
+		function lanzaSco(sco) {
+			//localStorage["numPagina"]=1;
+			var _paginaSCO = "sco" + sco + "/_index.html";
+	
+			var win = window.open(_paginaSCO, "cursoCD", "top=0,left=0,width=1000,height=675,scrollbars=no");
+			win.focus();
+	
+		}
+	
+	</script>
+</body>
+
+</html>

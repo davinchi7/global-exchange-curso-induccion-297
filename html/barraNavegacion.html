@@ -1,0 +1,175 @@
+<style type="text/css">
+    .indice {
+        font-size: 10px;
+        color: #00F;
+        cursor: pointer;
+        text-align: center;
+        padding: 0px;
+        text-decoration: underline;
+    }
+    
+    #btnSig {
+        cursor: pointer;
+        -webkit-animation: parpadeo 1s infinite;
+        /* Chrome, Safari 5 */
+        -moz-animation: parpadeo 1s infinite;
+        /* Firefox 5-15 */
+        -o-animation: parpadeo 1s infinite;
+        /* Opera 12+ */
+        animation: parpadeo 1s infinite;
+        /* Chrome, Firefox 16, IE 10+, Safari 5 */
+    }
+    
+    @-webkit-keyframes parpadeo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes parpadeo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @-o-keyframes parpadeo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes parpadeo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+<div style="display: flex; justify-content: space-around; flex-direction: row; color:#fff;">
+
+    <div style=" display: flex; flex-direction: row;  align-items:center; justify-content:space-around; flex-grow: 1;">
+        <div>
+            <span id="etAvance" class="tipsy" original-title="Muestra el avance del curo en porcentaje" onclick="javascript:irSiguiente(); return false;">Avance:</span>
+            <span id="spanPorcentaje">&nbsp;</span></td>
+        </div>
+        <div id="divSpriteAvance" style="background: url(../img/_spriteAvance.png) no-repeat left -400px; width: 143px; height: 20px; border: 0px solid orange;">
+            &nbsp;
+        </div>
+
+        <div id="spanAvanceParcial" class="tipsy" original-title="Muestra el n&uacute;mero de pantallas del ep&iacute;grafe actual">&nbsp;</div>
+
+    </div>
+
+    <div style="display: flex; flex-direction: row;  align-items:center; justify-content:space-around; flex-grow: 8;">
+
+        <div id="abrirIndicie" class="indice">
+            <img id="verIndice" class="tipsy" original-title="Ver &iacute;ndice" src="../img/indice.png" /></div>
+
+
+        <div id="salir" class="indice">
+            <img id="salirCurso" class="tipsy" original-title="Salir del curso" src="../img/salir.png" alt="salir" />
+        </div>
+
+
+        <div id="botonesNavegacion" style=" display: flex; flex-direction: row;">
+            <div id="actualizar" class="indice">
+                <img id="recargar" class="tipsy" original-title="Volver a cargar la p&aacute;gina actual" src="../img/recargar.png" /></div>
+
+            <div style="width: 50px;">
+                <a href="#" onclick="javascript:irAnterior(); return false;">
+                    <img class="tipsy" width="50" height="50" original-title="Retroceder a la pantalla anterior" src="../img/btnAtras.png" id="btnAtras" alt="Volver" /></a>
+            </div>
+
+            <div id="divSig" style="width: 50px;">
+                <a id="alinkSig" href="#" onclick="javascript:irSiguiente(); return false;">
+                    <img width="50" height="50" class="tipsy" original-title="Avanzar a la pantalla siguiente" src="../img/btnSgte.png" id="btnSig" alt="Siguiente" /></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function() {
+
+
+        //Activa el tooltip
+        $('.tipsy').tipsy({
+            gravity: 's'
+        });
+
+
+        $('#salirCurso').click(function() {
+            terminaComunicacion();
+            return false;
+        });
+
+
+        $('#btnSig').click(function() {
+            $(this).attr('src', '../img/processing.png');
+            $('div.tipsy').hide();
+        });
+
+        $('#btnAtras').click(function() {
+            $(this).attr('src', '../img/processing.png');
+            $('div.tipsy').hide();
+        });
+
+        $('#imgAudio').click(function() {
+            var estado = $(this).attr('estado');
+            if (estado == "audio") {
+                $(this).attr('src', '../img/mute.png');
+                $(this).attr('estado', 'mute');
+            } else {
+                $(this).attr('src', '../img/audio.png');
+                $(this).attr('estado', 'audio');
+            }
+
+            frmContenidos.stopSound();
+
+        });
+
+        //********** Eventos
+        //Al hacer clic en abrir �ndice
+        $('#abrirIndicie').click(function() {
+            //$('#abrirIndicie').hide('slow');
+            $("#lateral_izq").show('fadeIn');
+
+
+            //$("#lateral_izq").dialog({
+            //    height: 400,
+            //    width: 300,
+            //    modal: true,
+            //    show: { effect: 'drop', direction: "up" },
+            //    close: function (event, ui) {
+            //        $('#lateral_izq').hide('slow');
+            //        $('#abrirIndicie').show('slow');
+            //    }
+            //});
+        });
+
+        $('#closeIndice').click(function() {
+            $('#lateral_izq').hide('slow');
+            $('#abrirIndicie').show('slow');
+        });
+
+
+        $('#actualizar').click(function() {
+            var idPagina = parseInt($('#idPantalla').html().replace('p.', ''));
+            var pagina = idPagina + ".htm";
+            recargarPagina(pagina);
+        });
+    });
+</script>

@@ -1,0 +1,117 @@
+﻿.portada{
+	text-align: center;
+	position: relative;
+	background-color: #f3f4f5;
+	height: 505px;
+}
+.fondo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+
+.titulo_seccion{
+	text-align: left;
+	background-color: #96ccc4;
+	position: relative;
+	width: 100%;
+	height: 60px;
+}
+
+#texto_titulo{
+	font-family: serif;
+	font-style: italic;
+	font-size: 36px;
+	font-weight: lighter;
+	color: #45505a;
+	position: absolute;
+	top: 5px;
+	left: 60px;
+	width: 100%;
+	z-index: 6;
+}
+
+#icono{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	z-index: 5;
+}
+
+.imagen_indice{
+	text-align: left;
+}
+
+
+.textos_indice{
+	position: absolute;
+	top: 185px;
+	left: 250px;
+	width: 100%;
+	z-index: 10;
+	text-align: left;
+	font-family: 'Open Sans', Arial;
+	font-size: 16px;
+}
+.textos_indice_destacado{
+	position: absolute;
+	top: 185px;
+	left: 250px;
+	width: 0px;
+	z-index: 20;
+	text-align: left;
+	font-family: 'Open Sans', Arial;
+	font-size: 16px;
+	overflow: hidden;
+	/* Safari 3.1 to 6.0 */
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: cubic-bezier(.22,.61,.36,1);
+    /* Standard syntax */
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.22,.61,.36,1);
+}
+
+#txt_entrada{
+	font-size: 19px;
+	font-weight: bold;
+}
+
+#txt_intro{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.txt_puntos{
+	padding: 10px 0px;
+	width: 480px;
+    border:0px;
+}
+.txt_puntos_destacado{
+	padding: 10px 0px;
+	width: 480px;
+	background-color: #45505a;
+	color: #fff;
+	padding-left: 30px;
+}
+
+.punto{
+	padding: 1px 8px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #96ccc4;
+}
+.punto.destacado{
+	color: #45505a;
+	background-color: #fff;
+}
+
+.cuadro_indice{
+	/*background-color: #fff;*/
+}
+
+#contenido{
+	background-color: #f3f4f5;
+}

@@ -1,0 +1,53 @@
+﻿body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.texto {
+    height: auto;
+    right: 50px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    width: 350px;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    background: linear-gradient(to top, transparent 0%, black 100%);
+    height: 100%;
+}
+
+.titulo {
+    position: absolute;
+    font-size: 6em;
+    bottom: 50px;
+    right: 0px;
+    opacity: 0.8;
+    padding: 0px 20px;
+    width: 100%;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, #fff 100%);
+    --animate-duration: 3s;
+}
+
+#tituloPantalla {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tituloPantalla2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 30;
+    left: 0;
+    width: 300px;
+    z-index: 10;
+    background-color: #000;
+    opacity: 0.8;
+    padding: 20px;
+}

@@ -1,0 +1,112 @@
+#actividad {
+    position: absolute;
+    width: 950px;
+    height: auto;
+    top: 0;
+    left: 0px;
+    font-size: 14px;
+}
+
+    #actividad #destino, #actividad #origen {
+        float: left;
+        margin-right: 55px;
+    }
+
+        #actividad #destino li, #actividad #origen li, #actividad #ejemplos li {
+            width: 150px;
+            
+            margin-bottom: 15px;
+            padding: 6px;
+            background-color: #fff;
+            border: 1px solid #99ccc5;
+            line-height: 17px;
+            -webkit-box-shadow: #cccccc 5px 5px 5px;
+            -moz-box-shadow: #cccccc 5px 5px 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            list-style: none;
+        }
+
+        #actividad #origen li {
+            background-color:#fff;
+        }
+
+        #actividad #destino li, #actividad #ejemplos li {
+            padding-left: 12px;
+            width: 250px;
+        }
+
+            #actividad #destino li strong, #actividad #origen li strong {
+                font-weight: bold;
+                color: #b3bf03;
+            }
+
+        #actividad #origen li {
+            border-color: #b3bf03;
+        }
+
+        #actividad #destino li.ejemplo {
+            color: #386e7d;
+        }
+
+            #actividad #destino li.ejemplo strong {
+                color: #386e7d;
+            }
+
+        #actividad #destino li.setRespuesta:hover {
+            color: #b3bf03;
+            border-color: #b3bf03;
+        }
+
+        #actividad #origen li:hover {
+            color: #b3bf03;
+            border-color: #b3bf03;
+            cursor: url("../../../img/openhand.cur"), default;
+
+        }
+
+        #actividad #destino .ui-state-hover {
+            font-weight: normal;
+        }
+
+        #actividad #destino .setRespuesta:hover {
+            cursor: pointer;
+            color: #000000;
+        }
+
+        #actividad #destino li b {
+            font-weight: bold;
+        }
+
+        #actividad #origen .setRespuesta {
+            cursor: url("../../img/openhand.cur"), default;
+        }
+
+        #actividad #origen .selected {
+            border-width: 2px;
+            border-color: #b3bf03;
+            background-color: #FF0;
+        }
+
+        #actividad #destino span {
+            color: #386e7d;
+        }
+
+    #actividad #ejemplos {
+        color: #386E7D;
+    }
+
+        #actividad #ejemplos b, #actividad #ejemplos strong {
+            font-weight: bold;
+        }
+
+.correcta {
+    background: url(../../../img/ok.png) no-repeat;
+    background-position: right;
+}
+
+.incorrecta {
+    background: url(../../../img/ko.png) no-repeat;
+    background-position: right;
+}

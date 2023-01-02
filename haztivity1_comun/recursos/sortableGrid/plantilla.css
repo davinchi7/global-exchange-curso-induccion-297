@@ -1,0 +1,47 @@
+#sortable {
+	list-style-type: none;
+	margin: 0; padding: 0;
+}
+#elementos {
+	margin-top: 190px;
+	margin-left: 100px;
+	width: auto;
+	height: auto;
+}
+#elementos span.caja, #elementos #sortable div.caja {
+	margin: 3px 3px 3px 0;
+	padding: 70px 10px 0px 10px;
+	float: left;
+	width: 140px;
+	height: 90px;
+	font-size: 16px;
+	text-align: center;
+	font-weight:bold;
+	background-color:#D1D1D1;
+	border:1px solid #D1D1D1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	opacity:0.9;
+	display: block;
+}
+#elementos #sortable div.caja:hover{
+	border:1px solid #ccc;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	background-color:#000;
+	color:#fff;
+	cursor: url("../../img/openhand.cur"), default;
+}
+#elementos span.ejemplo {
+	background-color: blue;
+	color:#fff;
+}
+.caja img {
+	float: left;
+	margin-top: -60px;
+}
+.it-changed {
+	border-color: #1c94c4 !important;
+}
