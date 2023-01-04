@@ -6,6 +6,7 @@ arrayPaginas[q][2]: ID del elemento en el indice de contenidos al que pertenece
 *******/
 var arrayPaginas = new Array();
 arrayPaginas[0] = new Array(1,'null.htm',0);
-arrayPaginas[1] = new Array(1,'10618.htm',1);
+arrayPaginas[1] = new Array(1,'10619.htm',1);
+arrayPaginas[2] = new Array(1,'10619.htm',1);
 //primera página
 //arrayPaginas[1] = new Array(1,'10549.htm',1);

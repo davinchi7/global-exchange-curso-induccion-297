@@ -9,7 +9,8 @@ arrayIndice[q][3]: nombre del archivo de contenidos del elemento en el indice de
 var _tituloCurso = 'Global Exchange';
 var arrayIndice = new Array();
 arrayIndice[0] = new Array(0, -1, ' ', 'null.htm');
-arrayIndice[1] = new Array(	1, 	0, 	'Portada', 	'10618.htm');
+arrayIndice[1] = new Array(	1, 	0, 	'SALAMANCA- Área Tecnología (1)', 	'10618.htm');
+arrayIndice[2] = new Array(	2, 	0, 	'SALAMANCA- Área Tecnología (3)', 	'10619.htm');
 
 //Primera página
 //arrayIndice[1] = new Array(	1, 	0, 	'Portada', 	'10549.htm');
