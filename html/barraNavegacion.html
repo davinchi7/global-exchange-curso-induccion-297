@@ -59,7 +59,7 @@
 
 <div style="display: flex; justify-content: space-around; flex-direction: row; color:#fff;">
 
-    <div style=" display: flex; flex-direction: row;  align-items:center; justify-content:space-around; flex-grow: 1;">
+    <div style=" display: none; flex-direction: row;  align-items:center; justify-content:space-around; flex-grow: 1;">
         <div>
             <span id="etAvance" class="tipsy" original-title="Muestra el avance del curo en porcentaje" onclick="javascript:irSiguiente(); return false;">Avance:</span>
             <span id="spanPorcentaje">&nbsp;</span></td>
@@ -72,29 +72,29 @@
 
     </div>
 
-    <div style="display: flex; flex-direction: row;  align-items:center; justify-content:space-around; flex-grow: 8;">
+    <div style="display: flex; flex-direction: row;  align-items:center; justify-content:flex-end; flex-grow: 8; background-color: transparent;">
 
-        <div id="abrirIndicie" class="indice">
+        <!-- <div id="abrirIndicie" class="indice">
             <img id="verIndice" class="tipsy" original-title="Ver &iacute;ndice" src="../img/indice.png" /></div>
 
 
         <div id="salir" class="indice">
             <img id="salirCurso" class="tipsy" original-title="Salir del curso" src="../img/salir.png" alt="salir" />
-        </div>
+        </div> -->
 
 
         <div id="botonesNavegacion" style=" display: flex; flex-direction: row;">
-            <div id="actualizar" class="indice">
+            <!-- <div id="actualizar" class="indice">
                 <img id="recargar" class="tipsy" original-title="Volver a cargar la p&aacute;gina actual" src="../img/recargar.png" /></div>
 
             <div style="width: 50px;">
                 <a href="#" onclick="javascript:irAnterior(); return false;">
                     <img class="tipsy" width="50" height="50" original-title="Retroceder a la pantalla anterior" src="../img/btnAtras.png" id="btnAtras" alt="Volver" /></a>
-            </div>
+            </div> -->
 
             <div id="divSig" style="width: 50px;">
                 <a id="alinkSig" href="#" onclick="javascript:irSiguiente(); return false;">
-                    <img width="50" height="50" class="tipsy" original-title="Avanzar a la pantalla siguiente" src="../img/btnSgte.png" id="btnSig" alt="Siguiente" /></a>
+                    <img width="25" height="25" class="tipsy" original-title="Avanzar a la pantalla siguiente" src="../img/btnSgte.png" id="btnSig" alt="Siguiente" /></a>
             </div>
 
         </div>

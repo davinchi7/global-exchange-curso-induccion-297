@@ -11,5 +11,6 @@ $('.js-mision').on('click', () => {
 $('.js-vision').on('click', () => {
     $('.js-text-2').show().addClass('animate__slideInDown');
     $('.js-vision').removeClass('animate__animated animate__flash animate__slow animate__infinite');
-    window.parent.document.getElementById('btnSig').style.display = 'block';
 });
+
+window.parent.document.getElementById('btnSig').style.display = 'block';

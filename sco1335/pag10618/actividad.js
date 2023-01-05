@@ -16,5 +16,7 @@ for (let i = 0; i <= 3; i++){
     });
 }
 $('.js-img-3').on('click', () => {
-    window.parent.document.getElementById('btnSig').style.display = 'block';
+    
 });
+
+window.parent.document.getElementById('btnSig').style.display = 'block';
