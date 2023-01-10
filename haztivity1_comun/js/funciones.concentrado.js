@@ -50,13 +50,11 @@ function iniciaComunicacion() {
         doLMSCommit("");
     }
 
-
     objSCO.getPaginaActual = function () {
         for (var i = 0; i < this.arrayUnos.length; i++) {
             if (this.arrayUnos[i] == "0")
                 break;
         }
-
         return i;
     }
 
@@ -90,7 +88,6 @@ function iniciaComunicacion() {
 
         doLMSCommit();
     }
-
 
     objSCO.recuperarIntentos = function (donde) {
         var sDataIntentos = doLMSGetValue("cmi.suspend_data");
@@ -134,6 +131,7 @@ function terminaComunicacion() {
 function loadInfoSCO() {
     objSCO.suspend_data = doLMSGetValue("cmi.suspend_data");
 
+
     if (objSCO.suspend_data == "") {
         objSCO.lesson_location = arrayPaginas[1][1];
         objSCO.lesson_status = "incomplete";
@@ -160,7 +158,6 @@ function loadInfoSCO() {
         objSCO.arrayUnos = objSCO.suspend_data.split(',')[1].split('');
     }
 
-    //console.log("Pantalla: " + objSCO.lesson_location );
 }
 
 
@@ -190,7 +187,6 @@ var actual = 0;
 var arrayUnos = new Array();
 
 function iniciaContenidos() {
-
     d = new dTree('d');
     d.config.useCookies = false;
 
@@ -215,27 +211,42 @@ function iniciaContenidos() {
 
     }
 
-    //Anade al div del �ndice todo el contenido generado din�micamente
+    //Añade al div del índice todo el contenido generado dinámicamente
     document.getElementById('divIndice').innerHTML = d;
 
-    //Opci�n que muestra todos los puntos cerrados. Para que est�n abiertos utilizar  d.openAll()
+    //Opción que muestra todos los puntos cerrados. Para que están abiertos utilizar  d.openAll()
     d.closeAll()
 
-    //Llama al API para que guarde la p�gina a la que vamos
+    //Llama al API para que guarde la página a la que vamos
     colocaPagina(objSCO.lesson_location);
 }
+
+
 
 /***
 --
 ***/
 function colocaPagina(url, btnNav) {
 
-   
+    //si le pasamos el nombre de la pantalla nos lleva a ella
+    if(getUrlParameter('pag')!=false){
+        var pag= getUrlParameter('pag');
+        for(var i =0; i <arrayPaginas.length; i++ ){
+            if(arrayPaginas[i][1] == pag +".htm"){
+                actual=i;
+                //console.log("arrayPaginas[1]", arrayPaginas[i][1], actual, pag +".htm");
+                url= arrayPaginas[i][1]
+                break;
+            }
+        }
+    }
+
+
+    btnNav=true;
 
     var _frm = document.getElementById('frmContenidos');
     numPagActual = getNumPagina(url);
     //localStorage["numPagina"] = numPagActual;
-
 
     //Si estamos en local podemos acceder a todo el indice
     if (entorno == "desarrollo") {
@@ -323,7 +334,6 @@ function paginaSiguienteVisitada() {
 --
 ***/
 function getNumPagina(url) {
-
     var numPagina = 0;
     var _url = url;
 
@@ -365,21 +375,22 @@ function getNumPaginaEnIndice(url) {
     return numPagina;
 }
 
-    var getUrlParameter = function getUrlParameter(sParam) {
-        var sPageURL = window.location.search.substring(1),
-            sURLVariables = sPageURL.split('&'),
-            sParameterName,
-            i;
+//obtiene los parámetros que vienen en la url
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
 
-        for (i = 0; i < sURLVariables.length; i++) {
-            sParameterName = sURLVariables[i].split('=');
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
 
-            if (sParameterName[0] === sParam) {
-                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-            }
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
         }
-        return false;
-    };
+    }
+    return false;
+};
 
     
     
@@ -387,7 +398,6 @@ function getNumPaginaEnIndice(url) {
      --
      ***/
     function irSiguiente() {
-
 
         //si existe el parámetro pagindex, nos lleva a esa página  
         if(getUrlParameter('pagindex')!=false){
@@ -403,7 +413,6 @@ function getNumPaginaEnIndice(url) {
              for(var i =0; i <arrayPaginas.length; i++ ){
                  if(arrayPaginas[i][1] == pag +".htm"){
                      actual=i;
-                     console.log("arrayPaginas[1]", arrayPaginas[i][1], actual, pag +".htm");
                     break;
                 }
              }
@@ -624,15 +633,10 @@ function write(str, add) {
         _div.innerHTML = str;
 }
 
-
 function openPopup(url, nameWin, caracteristicas) {
     var win = window.open(url, nameWin, caracteristicas);
     win.focus();
 }
-
-
-
-
 
 function sendTestResult(nota, status) {
     objSCO.sendTestResult(nota, status);

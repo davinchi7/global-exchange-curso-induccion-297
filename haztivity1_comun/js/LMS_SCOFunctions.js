@@ -14,6 +14,7 @@ var idioma= "es";
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 function loadPage(){
+
     var result = doLMSInitialize();
     var status = doLMSGetValue( "cmi.core.lesson_status" );
 	
@@ -104,9 +105,9 @@ function unloadPage() {
 }
 
 /*******************************************************************************
-** Esta función convertirá segundos en horas, los minutos(actas), y segundos en 
-** el formato de tipo de CMITIMESPAN - HHHH:MM:SS.SS (Horas tienen máximo de 4 
-** dígitos y Minuto de 2 dígitos
+** Esta funciï¿½n convertirï¿½ segundos en horas, los minutos(actas), y segundos en 
+** el formato de tipo de CMITIMESPAN - HHHH:MM:SS.SS (Horas tienen mï¿½ximo de 4 
+** dï¿½gitos y Minuto de 2 dï¿½gitos
 *******************************************************************************/
 function convertTotalSeconds(ts)
 {

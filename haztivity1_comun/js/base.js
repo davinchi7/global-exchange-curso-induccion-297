@@ -97,7 +97,7 @@
             $.getScript(rutaAbsoluta + 'recursos/' + gplantilla + '/plantilla.js?version=' + Date.now()).success(function() {
                 $.getScript(rutaSco + 'pag' + that.idPantalla + '/actividad.js?version=' + Date.now()).success(function() {
                     window.parent.document.getElementById('btnSig').src = "../img/btnSgte.png";
-                    window.parent.document.getElementById('btnAtras').src = "../img/btnAtras.png";
+                    //window.parent.document.getElementById('btnAtras').src = "../img/btnAtras.png";
                 });
             });
         }
